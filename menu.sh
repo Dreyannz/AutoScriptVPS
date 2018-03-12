@@ -1,18 +1,19 @@
 #!/bin/bash
 #Menu
 
+clear
 echo -e "* menu      : menampilkan daftar perintah"
-echo -e "* usernew   : membuat akun SSH & OpenVPN"
+echo -e "* add       : membuat akun SSH & OpenVPN"
 echo -e "* trial     : membuat akun trial"
-echo -e "* hapus     : menghapus akun SSH & OpenVPN"
-echo -e "* cek       : cek user login"
+echo -e "* remove    : menghapus akun SSH & OpenVPN"
+echo -e "* check     : cek user login"
 echo -e "* member    : daftar member SSH & OpenVPN"
-echo -e "* resvis    : restart service dropbear, webmin"
-echo -e "              squid3, OpenVPN dan SSH"
+echo -e "* restart   : restart Services such as:"
+echo -e "              Dropbear, Webmin, Squid3"
+echo -e "              SSH and OpenVPN"
 echo -e "* reboot    : reboot VPS"
 echo -e "* speedtest : speedtest VPS"
-echo -e "* info      : menampilkan informasi sistem"
-echo -e "* about     : info script auto install"
-echo -e "* exit      : keluar dari Putty/Connecbot/"
-echo -e "              JuiceSSH"
+echo -e "* info      : System Information"
+echo -e "* about     : Debian AutoScript VPS Info"
+echo -e "* exit      : Close Putty / JuiceSSH"
 echo -e ""
