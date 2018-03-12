@@ -2,9 +2,18 @@
 #About this script
 
 clear
-
-
+echo -e ""
+echo -e ""
+echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
+echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
+echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
+echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
+echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
+echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
+echo -e "#########  ########## #########      ###    "
+echo -e ""
 echo -e "Deb7AutoScriptVPS" 
+echo -e ""
 echo -e ""
 echo -e "For Debian 7 32 bit & 64 bit"
 echo -e "For VPS with KVM and VMWare virtualization"
