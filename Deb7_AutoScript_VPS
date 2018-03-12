@@ -54,13 +54,13 @@ apt-get -y install nginx
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
 echo "clear" >> .bashrc
-echo 'echo -e ":::::::::  :::::::::: :::::::::  ::::::::::: ' >> .bashrc
-echo 'echo -e ":+:    :+: :+:        :+:    :+: :+:     :+: ' >> .bashrc
-echo 'echo -e "+:+    +:+ +:+        +:+    +:+        +:+  ' >> .bashrc
-echo 'echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+   ' >> .bashrc
-echo 'echo -e "+#+    +#+ +#+        +#+    +#+      +#+    ' >> .bashrc
-echo 'echo -e "#+#    #+# #+#        #+#    #+#     #+#     ' >> .bashrc
-echo 'echo -e "#########  ########## #########      ###     ' >> .bashrc
+echo 'echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"' >> .bashrc
+echo 'echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"' >> .bashrc
+echo 'echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "' >> .bashrc
+echo 'echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "' >> .bashrc
+echo 'echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "' >> .bashrc
+echo 'echo -e "#+#    #+# #+#        #+#    #+#     #+#    "' >> .bashrc
+echo 'echo -e "#########  ########## #########      ###    "' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 echo 'echo -e "Welcome to $HOSTNAME" server' >> .bashrc
 echo 'echo -e "Script Mod by Bustami Arifin"' >> .bashrc
