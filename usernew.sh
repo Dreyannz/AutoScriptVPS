@@ -2,9 +2,21 @@
 #Script auto create user SSH
 
 clear
-read -p "Username    : " Login
-read -p "Password    : " Pass
-read -p "Expiration  : " masaaktif
+echo -e ""
+echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
+echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
+echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
+echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
+echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
+echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
+echo -e "#########  ########## #########      ###    "
+echo -e ""
+echo -e "Deb7AutoScriptVPS by _Dreyannz_"
+echo -e ""
+echo -e ""
+read -p "Username        : " Login
+read -p "Password        : " Pass
+read -p "How Many Days?  : " masaaktif
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 useradd -e `date -d "$masaaktif days" +"%Y-%m-%d"` -s /bin/false -M $Login
