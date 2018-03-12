@@ -42,4 +42,7 @@ chmod +x Deb7_AutoScript_VPS
 ./Deb7_AutoScript_VPS
 ```
 
-### FIX on Error: certificates on raw.githubcontent
+### FIX on Error: The certificate of `raw.githubusercontent.com' is not trusted.
+```
+sudo apt-get install ca-certificates
+```
