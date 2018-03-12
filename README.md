@@ -1,6 +1,6 @@
 # Deb7AutoScriptVPS
 
-Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed in setting up your VPS
+Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
 
 ## Services Included in Deb7AutoScriptVPS
 
