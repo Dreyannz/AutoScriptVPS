@@ -95,7 +95,7 @@ service openvpn restart
 
 # openvpn configuration
 cd /etc/openvpn/
-wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/blob/master/client-1194.conf"
+wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/client-1194.conf"
 sed -i $MYIP2 /etc/openvpn/client.ovpn;
 cp client.ovpn /home/vps/public_html/
 
