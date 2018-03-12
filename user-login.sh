@@ -5,7 +5,19 @@
 # Translation by Bustami Arifin
 # ==========================
 # 
-
+clear
+echo -e ""
+echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
+echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
+echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
+echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
+echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
+echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
+echo -e "#########  ########## #########      ###    "
+echo -e ""
+echo -e "Deb7AutoScriptVPS by _Dreyannz_"
+echo -e ""
+echo -e ""
 data=( `ps aux | grep -i dropbear | awk '{print $2}'`);
 
 echo "-----------------------";
