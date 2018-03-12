@@ -1,6 +1,7 @@
 #!/bin/bash
 #Script auto create user SSH
 
+clear
 read -p "Username    : " Login
 read -p "Password    : " Pass
 read -p "Expiration  : " masaaktif
