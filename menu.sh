@@ -2,6 +2,18 @@
 #Menu
 
 clear
+echo -e ""
+echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
+echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
+echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
+echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
+echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
+echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
+echo -e "#########  ########## #########      ###    "
+echo -e ""
+echo -e "Deb7AutoScriptVPS by _Dreyannz_"
+echo -e ""
+echo -e ""
 echo -e "* menu      : Show Commands"
 echo -e "* add       : Create User Account"
 echo -e "* trial     : Create Trial Account"
