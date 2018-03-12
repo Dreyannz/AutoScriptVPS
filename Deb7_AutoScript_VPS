@@ -234,7 +234,7 @@ echo "------"  | tee -a log-install.txt
 echo "menu (Show Commands)"  | tee -a log-install.txt
 echo "add (Create User Account)"  | tee -a log-install.txt
 echo "trial (Create Trial Account)"  | tee -a log-install.txt
-echo "remove (Remove User Accounts)"  | tee -a log-install.txt
+echo "remove (Remove User Account)"  | tee -a log-install.txt
 echo "check (Check User Login)"  | tee -a log-install.txt
 echo "member (Check Member)"  | tee -a log-install.txt
 echo "restart (Restart Service Dropbear, Webmin, Squid3, Openvpn and SSH)"  | tee -a log-install.txt
