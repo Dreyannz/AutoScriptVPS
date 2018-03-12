@@ -1,11 +1,11 @@
 #!/bin/bash
-#Script untuk menghapus user SSH & OpenVPN
+#Script to Remove Users on SSH and OpenVPN
 
-read -p "Nama user SSH yang akan dihapus : " Pengguna
+read -p "Username to be removed : " Pengguna
 
 if getent passwd $Pengguna > /dev/null 2>&1; then
         userdel $Pengguna
-        echo -e "User $Pengguna telah dihapus."
+        echo -e "User $Pengguna has been deleted successfully."
 else
-        echo -e "GAGAL: User $Pengguna tidak ada."
+        echo -e "Error: User $Pengguna is not on the User list."
 fi
