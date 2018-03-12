@@ -4,6 +4,8 @@
 #Modified by Bustami Arifin
 #Translated by _Dreyannz_
 
+clear
+
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
 Login=trial`</dev/urandom tr -dc X-Z0-9 | head -c4`
