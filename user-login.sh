@@ -2,6 +2,7 @@
 #
 # Script Copyright www.fornesia.com
 # Mod by Bustami Arifin
+# Translation by Bustami Arifin
 # ==========================
 # 
 
@@ -45,11 +46,9 @@ echo "";
 
 echo "------------------------------------------------"
 echo " Multi Login = kill "
-echo " Cara pakai : kill nomor PID "
+echo " How to Use : kill number PID "
+echo " ex. kill 1234 "
 echo "------------------------------------------------"
 
 echo "";
-
-echo "Mod by Bustami Arifin";
-
 echo "";
