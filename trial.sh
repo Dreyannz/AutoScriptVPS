@@ -5,6 +5,18 @@
 #Translated by _Dreyannz_
 
 clear
+echo -e ""
+echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
+echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
+echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
+echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
+echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
+echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
+echo -e "#########  ########## #########      ###    "
+echo -e ""
+echo -e "Deb7AutoScriptVPS by _Dreyannz_"
+echo -e ""
+echo -e ""
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
