@@ -2,12 +2,12 @@
 #Menu
 
 clear
-echo -e "* menu      : menampilkan daftar perintah"
-echo -e "* add       : membuat akun SSH & OpenVPN"
-echo -e "* trial     : membuat akun trial"
-echo -e "* remove    : menghapus akun SSH & OpenVPN"
-echo -e "* check     : cek user login"
-echo -e "* member    : daftar member SSH & OpenVPN"
+echo -e "* menu      : Show Commands"
+echo -e "* add       : Create User Account"
+echo -e "* trial     : Create Trial Account"
+echo -e "* remove    : Remove User Accounts"
+echo -e "* check     : Check User Login"
+echo -e "* member    : Check Member"
 echo -e "* restart   : restart Services such as:"
 echo -e "              Dropbear, Webmin, Squid3"
 echo -e "              SSH and OpenVPN"
