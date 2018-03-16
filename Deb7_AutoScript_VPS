@@ -119,7 +119,7 @@ service ssh restart
 apt-get -y install dropbear
 sed -i 's/NO_START=1/NO_START=0/g' /etc/default/dropbear
 sed -i 's/DROPBEAR_PORT=22/DROPBEAR_PORT=443/g' /etc/default/dropbear
-sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 143"/g' /etc/default/dropbear
+sed -i 's/DROPBEAR_EXTRA_ARGS=/DROPBEAR_EXTRA_ARGS="-p 80"/g' /etc/default/dropbear
 echo "/bin/false" >> /etc/shells
 echo "/usr/sbin/nologin" >> /etc/shells
 service ssh restart
@@ -149,7 +149,7 @@ socket = r:TCP_NODELAY=1
 
 
 [dropbear]
-accept = 442
+accept = 143
 connect = 127.0.0.1:443
 
 END
@@ -222,8 +222,8 @@ echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
 echo "-------"  | tee -a log-install.txt
 echo "OpenSSH  : 22, 444"  | tee -a log-install.txt
-echo "Dropbear : 143, 443"  | tee -a log-install.txt
-echo "SSL      : 442"  | tee -a log-install.txt
+echo "Dropbear : 80, 443"  | tee -a log-install.txt
+echo "SSL      : 143"  | tee -a log-install.txt
 echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
 echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
 echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
