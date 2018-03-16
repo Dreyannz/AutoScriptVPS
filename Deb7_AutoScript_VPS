@@ -164,6 +164,10 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
+# install fail2ban
+apt-get -y install fail2ban;
+service fail2ban restart
+
 # install ddos deflate
 cd
 apt-get -y install dnsutils dsniff
@@ -189,7 +193,7 @@ wget -O trial "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/mast
 wget -O remove "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/hapus.sh"
 wget -O check "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
-wget -O servermessage "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
+wget -O banner "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/servermessage.sh"
 wget -O restart "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/info.sh"
@@ -203,7 +207,7 @@ chmod +x trial
 chmod +x remove
 chmod +x check
 chmod +x member
-chmod +x servermessage
+chmod +x banner
 chmod +x restart
 chmod +x speedtest
 chmod +x info
@@ -256,6 +260,7 @@ echo "trial      (Create Trial Account)"  | tee -a log-install.txt
 echo "remove     (Remove User Account)"  | tee -a log-install.txt
 echo "check      (Check User Login)"  | tee -a log-install.txt
 echo "member     (Check Member)"  | tee -a log-install.txt
+echo "banner     (Configure Server Message)"  | tee -a log-install.txt
 echo "restart    (Restart Service Dropbear, Webmin,"  | tee -a log-install.txt
 echo "            Squid3, Openvpn and SSH)"  | tee -a log-install.txt
 echo "reboot     (Reboot VPS)"  | tee -a log-install.txt
