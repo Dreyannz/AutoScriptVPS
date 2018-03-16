@@ -164,6 +164,23 @@ cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
 /etc/init.d/stunnel4 restart
 
+# install ddos deflate
+cd
+apt-get -y install dnsutils dsniff
+wget https://github.com/Dreyannz/Deb7AutoScriptVPS/raw/master/ddos-deflate-master.zip
+unzip ddos-deflate-master.zip
+cd ddos-deflate-master
+./install.sh
+rm -rf /root/ddos-deflate-master.zip
+
+# banner
+rm /etc/issue.net
+wget -O /etc/issue.net "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/issue.net"
+sed -i 's@#Banner@Banner@g' /etc/ssh/sshd_config
+sed -i 's@DROPBEAR_BANNER=""@DROPBEAR_BANNER="/etc/issue.net"@g' /etc/default/dropbear
+service ssh restart
+service dropbear restart
+
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/menu.sh"
@@ -172,6 +189,7 @@ wget -O trial "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/mast
 wget -O remove "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/hapus.sh"
 wget -O check "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
+wget -O servermessage "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
 wget -O restart "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/info.sh"
@@ -185,6 +203,7 @@ chmod +x trial
 chmod +x remove
 chmod +x check
 chmod +x member
+chmod +x servermessage
 chmod +x restart
 chmod +x speedtest
 chmod +x info
@@ -216,7 +235,7 @@ apt-get install neofetch
 
 # info
 clear
-echo "Debian AutoScript VPS Includes:" | tee log-install.txt
+echo "Deb7AutoScriptVPS Includes:" | tee log-install.txt
 echo "===========================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Service"  | tee -a log-install.txt
@@ -231,23 +250,25 @@ echo "nginx    : 81"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Commands"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
-echo "menu (Show Commands)"  | tee -a log-install.txt
-echo "add (Create User Account)"  | tee -a log-install.txt
-echo "trial (Create Trial Account)"  | tee -a log-install.txt
-echo "remove (Remove User Account)"  | tee -a log-install.txt
-echo "check (Check User Login)"  | tee -a log-install.txt
-echo "member (Check Member)"  | tee -a log-install.txt
-echo "restart (Restart Service Dropbear, Webmin, Squid3, Openvpn and SSH)"  | tee -a log-install.txt
-echo "reboot (Reboot VPS)"  | tee -a log-install.txt
-echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
-echo "info (System Information)"  | tee -a log-install.txt
-echo "about (Debian AutoScript VPS Info)"  | tee -a log-install.txt
+echo "menu       (Show Commands)"  | tee -a log-install.txt
+echo "add        (Create User Account)"  | tee -a log-install.txt
+echo "trial      (Create Trial Account)"  | tee -a log-install.txt
+echo "remove     (Remove User Account)"  | tee -a log-install.txt
+echo "check      (Check User Login)"  | tee -a log-install.txt
+echo "member     (Check Member)"  | tee -a log-install.txt
+echo "restart    (Restart Service Dropbear, Webmin,"  | tee -a log-install.txt
+echo "            Squid3, Openvpn and SSH)"  | tee -a log-install.txt
+echo "reboot     (Reboot VPS)"  | tee -a log-install.txt
+echo "speedtest  (Speedtest VPS)"  | tee -a log-install.txt
+echo "info       (System Information)"  | tee -a log-install.txt
+echo "about      (Debian AutoScript VPS Info)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Other Features"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
-echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
-echo "IPv6     : [off]"  | tee -a log-install.txt
+echo "DDoS Deflate   : Anti-DDOS"  | tee -a log-install.txt
+echo "Webmin         : http://$MYIP:10000/"  | tee -a log-install.txt
+echo "Timezone       : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "IPv6           : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
 echo "Modified by Bustami Arifin"  | tee -a log-install.txt
