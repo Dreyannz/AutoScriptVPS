@@ -12,6 +12,7 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 * BadVPN
 * WebMin
 * Nginx
+* Fail2Ban
 
 ## Script Commands in Deb7AutoScriptVPS
 
@@ -20,6 +21,7 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 * trial
 * check
 * member
+* banner
 * restart
 * reboot
 * speedtest
