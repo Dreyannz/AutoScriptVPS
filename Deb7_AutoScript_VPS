@@ -272,7 +272,7 @@ echo "Other Features"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
 echo "DDoS Deflate   : Anti-DDOS"  | tee -a log-install.txt
 echo "Webmin         : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone       : Asia/Jakarta (GMT +7)"  | tee -a log-install.txt
+echo "Timezone       : Asia/Manila (GMT +7)"  | tee -a log-install.txt
 echo "IPv6           : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
