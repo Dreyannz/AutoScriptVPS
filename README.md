@@ -16,17 +16,19 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 
 ## Script Commands in Deb7AutoScriptVPS
 
-* menu
-* add
-* trial
-* check
-* member
-* banner
-* restart
-* reboot
-* speedtest
-* info
-* about
+* menu       (Show Commands)
+* add        (Create User Account)
+* trial      (Create Trial Account)
+* remove     (Remove User Account)
+* check      (Check User Login)
+* member     (Check Member)
+* banner     (Configure Server Message)
+* restart    (Restart Service Dropbear, Webmin,
+              Squid3, Openvpn and SSH)
+* reboot     (Reboot VPS)
+* speedtest  (Speedtest VPS)
+* info       (System Information)
+* about      (Debian AutoScript VPS Info)
 
 ### How to Use the Deb7AutoScriptVPS
 
