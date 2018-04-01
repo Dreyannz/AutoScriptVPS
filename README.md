@@ -23,10 +23,10 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 * check   &nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp; (Check User Login)
 * member &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; (Check Member)
 * banner     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Configure Server Message)
-* restart   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Restart Service Dropbear, Webmin, Squid3, Openvpn and SSH)
-* reboot    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Reboot VPS)
+* restart   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Restart Service Dropbear, Webmin, Squid3, Openvpn and SSH)
+* reboot   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Reboot VPS)
 * speedtest&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;(Speedtest VPS)
-* info    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(System Information)
+* info    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(System Information)
 * about   &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Debian AutoScript VPS Info)
 
 ### How to Use the Deb7AutoScriptVPS
