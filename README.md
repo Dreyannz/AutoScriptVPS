@@ -16,9 +16,9 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 
 ## Script Commands in Deb7AutoScriptVPS
 
-* menu       (Show Commands)
-* add        (Create User Account)
-* trial      (Create Trial Account)
+* menu      &nbsp;&nbsp;&nbsp; (Show Commands)
+* add       &nbsp;&nbsp;&nbsp; (Create User Account)
+* trial  &nbsp;&nbsp;&nbsp;    (Create Trial Account)
 * remove     (Remove User Account)
 * check      (Check User Login)
 * member     (Check Member)
