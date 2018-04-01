@@ -27,7 +27,7 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 * reboot    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Reboot VPS)
 * speedtest  &nbsp;&nbsp;&nbsp;&nbsp;(Speedtest VPS)
 * info    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(System Information)
-* about    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Debian AutoScript VPS Info)
+* about   &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Debian AutoScript VPS Info)
 
 ### How to Use the Deb7AutoScriptVPS
 
