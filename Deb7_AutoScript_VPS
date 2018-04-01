@@ -61,7 +61,7 @@ echo 'echo -e "\e[94m+#+    +:+ +#++:++#   +#++:++#+        +#+  "' >> .bashrc
 echo 'echo -e "\e[94m+#+    +#+ +#+        +#+    +#+      +#+   "' >> .bashrc
 echo 'echo -e "\e[94m#+#    #+# #+#        #+#    #+#     #+#    "' >> .bashrc
 echo 'echo -e "\e[94m#########  ########## #########      ###    "' >> .bashrc
-echo 'echo -e ""' >> .bashrc
+echo 'echo -e "\e[0m"' >> .bashrc
 echo 'echo -e "Welcome to $HOSTNAME" server' >> .bashrc
 echo 'echo -e "Script Mod by Bustami Arifin"' >> .bashrc
 echo 'echo -e "Translation by _Dreyannz_"' >> .bashrc
