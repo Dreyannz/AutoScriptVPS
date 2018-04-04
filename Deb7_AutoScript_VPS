@@ -53,20 +53,36 @@ apt-get -y install nginx
 # install essential package
 apt-get -y install nano iptables dnsutils openvpn screen whois ngrep unzip unrar
 
-echo "clear" >> .bashrc
-echo 'echo -e "\e[94m:::::::::  :::::::::: :::::::::  :::::::::::"' >> .bashrc
-echo 'echo -e "\e[94m:+:    :+: :+:        :+:    :+: :+:     :+:"' >> .bashrc
-echo 'echo -e "\e[94m+:+    +:+ +:+        +:+    +:+        +:+ "' >> .bashrc
-echo 'echo -e "\e[94m+#+    +:+ +#++:++#   +#++:++#+        +#+  "' >> .bashrc
-echo 'echo -e "\e[94m+#+    +#+ +#+        +#+    +#+      +#+   "' >> .bashrc
-echo 'echo -e "\e[94m#+#    #+# #+#        #+#    #+#     #+#    "' >> .bashrc
-echo 'echo -e "\e[94m#########  ########## #########      ###    "' >> .bashrc
-echo 'echo -e "\e[0m"' >> .bashrc
-echo 'echo -e "Welcome to $HOSTNAME" server' >> .bashrc
-echo 'echo -e "Script Mod by Bustami Arifin"' >> .bashrc
-echo 'echo -e "Translation by _Dreyannz_"' >> .bashrc
-echo 'echo -e "For Commands, input menu"' >> .bashrc
-echo 'echo -e ""' >> .bashrc
+echo "clear"                                                              >> .bashrc
+echo 'echo -e "\e[94m   :::::::::  :::::::::: :::::::::  :::::::::::   "' >> .bashrc
+echo 'echo -e "\e[94m   :+:    :+: :+:        :+:    :+: :+:     :+:   "' >> .bashrc
+echo 'echo -e "\e[94m   +:+    +:+ +:+        +:+    +:+        +:+    "' >> .bashrc
+echo 'echo -e "\e[94m   #+    +:+ +#++:++#   +#++:++#+        +#+      "' >> .bashrc
+echo 'echo -e "\e[94m   +#+    +#+ +#+        +#+    +#+      +#+      "' >> .bashrc
+echo 'echo -e "\e[94m   #+#    #+# #+#        #+#    #+#     #+#       "' >> .bashrc
+echo 'echo -e "\e[94m   #########  ########## #########      ###       "' >> .bashrc
+echo 'echo -e "\e[94m         Deb7AutoScriptVPS by _Dreyannz_          "' >> .bashrc
+echo 'echo -e "\e[0m"'                                                    >> .bashrc
+echo 'echo -e "\e[94m##################################################"' >> .bashrc
+echo 'echo -e "\e[94m#   Commands           Description               #"' >> .bashrc
+echo 'echo -e "\e[94m#                                                #"' >> .bashrc
+echo 'echo -e "\e[94m#   menu       ----    Show Commands             #"' >> .bashrc
+echo 'echo -e "\e[94m#   add        ----    Create User Account       #"' >> .bashrc
+echo 'echo -e "\e[94m#   trial      ----    Create Trial Account      #"' >> .bashrc
+echo 'echo -e "\e[94m#   remove     ----    Remove Account            #"' >> .bashrc
+echo 'echo -e "\e[94m#   check      ----    Check Account Login       #"' >> .bashrc
+echo 'echo -e "\e[94m#   member     ----    Check Users               #"' >> .bashrc
+echo 'echo -e "\e[94m#   banner     ----    Configure Server Message  #"' >> .bashrc
+echo 'echo -e "\e[94m#   restart    ----    Restart Services          #"' >> .bashrc
+echo 'echo -e "\e[94m#   reboot     ----    Reboot VPS                #"' >> .bashrc
+echo 'echo -e "\e[94m#   speedtest  ----    Speedtest VPS             #"' >> .bashrc
+echo 'echo -e "\e[94m#   info       ----    System Information        #"' >> .bashrc
+echo 'echo -e "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"' >> .bashrc
+echo 'echo -e "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"' >> .bashrc
+echo 'echo -e "\e[94m#                                                #"' >> .bashrc
+echo 'echo -e "\e[94m##################################################"' >> .bashrc
+echo 'echo -e "\e[0m"'                                                    >> .bashrc
+
 
 # install webserver
 cd
@@ -258,52 +274,52 @@ apt-get install neofetch
 
 # info
 clear
-echo "Deb7AutoScriptVPS Includes:" | tee log-install.txt
-echo "===========================================" | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Service"  | tee -a log-install.txt
-echo "-------"  | tee -a log-install.txt
-echo "OpenSSH  : 22, 444"  | tee -a log-install.txt
-echo "Dropbear : 80, 443"  | tee -a log-install.txt
-echo "SSL      : 143"  | tee -a log-install.txt
-echo "Squid3   : 8000, 8080 (limit to IP SSH)"  | tee -a log-install.txt
-echo "OpenVPN  : TCP 1194 (client config : http://$MYIP:81/client.ovpn)"  | tee -a log-install.txt
-echo "badvpn   : badvpn-udpgw port 7300"  | tee -a log-install.txt
-echo "nginx    : 81"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Commands"  | tee -a log-install.txt
-echo "------"  | tee -a log-install.txt
-echo "menu       (Show Commands)"  | tee -a log-install.txt
-echo "add        (Create User Account)"  | tee -a log-install.txt
-echo "trial      (Create Trial Account)"  | tee -a log-install.txt
-echo "remove     (Remove User Account)"  | tee -a log-install.txt
-echo "check      (Check User Login)"  | tee -a log-install.txt
-echo "member     (Check Member)"  | tee -a log-install.txt
-echo "banner     (Configure Server Message)"  | tee -a log-install.txt
-echo "restart    (Restart Service Dropbear, Webmin,"  | tee -a log-install.txt
-echo "            Squid3, Openvpn and SSH)"  | tee -a log-install.txt
-echo "reboot     (Reboot VPS)"  | tee -a log-install.txt
-echo "speedtest  (Speedtest VPS)"  | tee -a log-install.txt
-echo "info       (System Information)"  | tee -a log-install.txt
-echo "about      (Debian AutoScript VPS Info)"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Other Features"  | tee -a log-install.txt
-echo "----------"  | tee -a log-install.txt
-echo "DDoS Deflate   : Anti-DDOS"  | tee -a log-install.txt
-echo "OCS Panel      : Supported"  | tee -a log-install.txt
-echo "Webmin         : http://$MYIP:10000/"  | tee -a log-install.txt
-echo "Timezone       : Asia/Manila (GMT +7)"  | tee -a log-install.txt
-echo "IPv6           : [off]"  | tee -a log-install.txt
-
-echo ""  | tee -a log-install.txt
-echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
-echo "Modified by Bustami Arifin"  | tee -a log-install.txt
-echo "Translation by _Dreyannz_"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "Installation Logs --> /root/log-install.txt"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "VPS Auto Reboot at 12 AM"  | tee -a log-install.txt
-echo ""  | tee -a log-install.txt
-echo "==========================================="  | tee -a log-install.txt
+echo "\e[94m##################################################"  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m         Deb7AutoScriptVPS by _Dreyannz_          "  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m                    Services                      "  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m    OpenSSH        :   22, 444                    "  | tee -a log-install.txt
+echo "\e[94m    Dropbear       :   80, 443                    "  | tee -a log-install.txt
+echo "\e[94m    SSL            :   143                        "  | tee -a log-install.txt
+echo "\e[94m    Squid3         :   3128, 8000, 8080           "  | tee -a log-install.txt
+echo "\e[94m    OpenVPN        :   TCP 1194                   "  | tee -a log-install.txt
+echo "\e[94m    BadVPN         :   UDPGW 7300                 "  | tee -a log-install.txt
+echo "\e[94m    Nginx          :   81                         "  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m              Other Features Included             "  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m    Timezone       :   Asia/Manila (GMT +7)       "  | tee -a log-install.txt
+echo "\e[94m    Webmin         :   http://$MYIP:10000/        "  | tee -a log-install.txt
+echo "\e[94m    IPV6           :   [OFF]                      "  | tee -a log-install.txt
+echo "\e[94m    Cron Scheduler :   [ON]                       "  | tee -a log-install.txt
+echo "\e[94m    Fail2Ban       :   [ON]                       "  | tee -a log-install.txt
+echo "\e[94m    DDOS Deflate   :   [ON]                       "  | tee -a log-install.txt
+echo "\e[94m    LibXML Parser  :   {ON]                       "  | tee -a log-install.txt
+echo "\e[94m                                                  "  | tee -a log-install.txt
+echo "\e[94m##################################################"  | tee -a log-install.txt
+echo "                                                        "  | tee -a log-install.txt
+echo "                                                        "  | tee -a log-install.txt
+echo "\e[94m##################################################"  | tee -a log-install.txt
+echo "\e[94m#   Commands           Description               #"  | tee -a log-install.txt
+echo "\e[94m#                                                #"  | tee -a log-install.txt
+echo "\e[94m#   menu       ----    Show Commands             #"  | tee -a log-install.txt
+echo "\e[94m#   add        ----    Create User Account       #"  | tee -a log-install.txt
+echo "\e[94m#   trial      ----    Create Trial Account      #"  | tee -a log-install.txt
+echo "\e[94m#   remove     ----    Remove Account            #"  | tee -a log-install.txt
+echo "\e[94m#   check      ----    Check Account Login       #"  | tee -a log-install.txt
+echo "\e[94m#   member     ----    Check Users               #"  | tee -a log-install.txt
+echo "\e[94m#   banner     ----    Configure Server Message  #"  | tee -a log-install.txt
+echo "\e[94m#   restart    ----    Restart Services          #"  | tee -a log-install.txt
+echo "\e[94m#   reboot     ----    Reboot VPS                #"  | tee -a log-install.txt
+echo "\e[94m#   speedtest  ----    Speedtest VPS             #"  | tee -a log-install.txt
+echo "\e[94m#   info       ----    System Information        #"  | tee -a log-install.txt
+echo "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"  | tee -a log-install.txt
+echo "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"  | tee -a log-install.txt
+echo "\e[94m#                                                #"  | tee -a log-install.txt
+echo "\e[94m##################################################"  | tee -a log-install.txt
+echo -e "\e[0m                                                   "
 cd
 rm -f /root/debian7.sh
