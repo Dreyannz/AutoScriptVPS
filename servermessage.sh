@@ -1,17 +1,17 @@
 #!/bin/bash
-#Script auto create user SSH
+#Script for ServerMessage Editing
 
 clear
-echo -e ""
-echo -e ":::::::::  :::::::::: :::::::::  :::::::::::"
-echo -e ":+:    :+: :+:        :+:    :+: :+:     :+:"
-echo -e "+:+    +:+ +:+        +:+    +:+        +:+ "
-echo -e "+#+    +:+ +#++:++#   +#++:++#+        +#+  "
-echo -e "+#+    +#+ +#+        +#+    +#+      +#+   "
-echo -e "#+#    #+# #+#        #+#    #+#     #+#    "
-echo -e "#########  ########## #########      ###    "
-echo -e ""
-echo -e "Deb7AutoScriptVPS by _Dreyannz_"
+echo -e "                                                        "
+echo -e "\e[94m   :::::::::  :::::::::: :::::::::  :::::::::::   "
+echo -e "\e[94m   :+:    :+: :+:        :+:    :+: :+:     :+:   "
+echo -e "\e[94m   +:+    +:+ +:+        +:+    +:+        +:+    "
+echo -e "\e[94m   #+    +:+ +#++:++#   +#++:++#+        +#+      "
+echo -e "\e[94m   +#+    +#+ +#+        +#+    +#+      +#+      "
+echo -e "\e[94m   #+#    #+# #+#        #+#    #+#     #+#       "
+echo -e "\e[94m   #########  ########## #########      ###       "
+echo -e "\e[94m         Deb7AutoScriptVPS by _Dreyannz_          "
+echo -e "\e[0m  
 echo -e ""
 echo -e ""
 echo -e ""
