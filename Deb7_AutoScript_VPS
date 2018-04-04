@@ -81,8 +81,7 @@ echo 'echo -e "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"' >> .ba
 echo 'echo -e "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"' >> .bashrc
 echo 'echo -e "\e[94m#                                                #"' >> .bashrc
 echo 'echo -e "\e[94m##################################################"' >> .bashrc
-echo 'echo -e "\e[0m"'                                                    >> .bashrc
-
+echo 'echo -e "\e[0m"'  
 
 # install webserver
 cd
@@ -262,26 +261,16 @@ rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
 
 # install neofetch
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
-curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
+echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
+curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
 apt-get update
-apt-get install neofetch
+apt-get install -y neofetch
 
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
-curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
-apt-get update
-apt-get install neofetch
-
-
-#remove Deb7AutoScriptVPS 
-cd
-rm -f /root/Deb7_AutoScript_VPS.sh
 
 # info
 clear
 echo -e ""
 echo -e "\e[94m##################################################"
-echo -e "\e[94m                                                  "
 echo -e "\e[94m         Deb7AutoScriptVPS by _Dreyannz_          "
 echo -e "\e[94m                                                  "
 echo -e "\e[94m                    Services                      "
@@ -303,10 +292,9 @@ echo -e "\e[94m    Cron Scheduler :   [ON]                       "
 echo -e "\e[94m    Fail2Ban       :   [ON]                       "
 echo -e "\e[94m    DDOS Deflate   :   [ON]                       "
 echo -e "\e[94m    LibXML Parser  :   {ON]                       "
-echo -e "\e[94m                                                  "
 echo -e "\e[94m##################################################"
 echo -e "                                                        "
 read -n1 -r -p "          Press Any Key To Show Commands          "
 menu
-
-
+cd
+rm -f /root/Deb7_AutoScript_VPS.sh
