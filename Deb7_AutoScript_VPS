@@ -233,6 +233,7 @@ wget -O speedtest "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/
 wget -O info "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/info.sh"
 wget -O about "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/about.sh"
 
+
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x menu
@@ -260,12 +261,10 @@ service webmin restart
 rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
 
-# install neofetch
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | sudo tee -a /etc/apt/sources.list
-curl -L "https://bintray.com/user/downloadSubjectPublicKey?username=bintray" -o Release-neofetch.key && sudo apt-key add Release-neofetch.key && rm Release-neofetch.key
-apt-get update
-apt-get install -y neofetch
-
+# install Screenfetch
+apt-get -y install lsb-release scrot
+wget -O screenfetch 'https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/screenfetch'
+chmod +x screenfetch
 
 # info
 clear
