@@ -2,4 +2,4 @@
 #info
 
 clear
-neofetch
+./screenfetch
