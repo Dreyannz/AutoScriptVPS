@@ -320,6 +320,6 @@ echo -e "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"
 echo -e "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"
 echo -e "\e[94m#                                                #"
 echo -e "\e[94m##################################################"
-echo -e -e "\e[0m                                                "
+echo -e "\e[0m                                                "
 cd
 rm -f /root/debian7.sh
