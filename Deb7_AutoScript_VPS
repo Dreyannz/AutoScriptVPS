@@ -220,12 +220,6 @@ iptables -A FORWARD -m string --algo bm --string "torrent" -j DROP
 iptables -A FORWARD -m string --algo bm --string "announce" -j DROP
 iptables -A FORWARD -m string --algo bm --string "info_hash" -j DROP
 
-# install neofetch
-echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
-curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
-apt-get update
-apt-get install neofetch
-
 # download script
 cd /usr/bin
 wget -O menu "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/menu.sh"
@@ -267,6 +261,16 @@ service webmin restart
 rm -rf ~/.bash_history && history -c
 echo "unset HISTFILE" >> /etc/profile
 
+# install neofetch
+echo "deb http://dl.bintray.com/dawidd6/neofetch jessie main" | tee -a /etc/apt/sources.list
+curl "https://bintray.com/user/downloadSubjectPublicKey?username=bintray"| apt-key add -
+apt-get update
+apt-get install neofetch
+
+#remove Deb7AutoScriptVPS 
+cd
+rm -f /root/Deb7_AutoScript_VPS.sh
+
 # info
 clear
 echo -e ""
@@ -296,25 +300,7 @@ echo -e "\e[94m    LibXML Parser  :   {ON]                       "
 echo -e "\e[94m                                                  "
 echo -e "\e[94m##################################################"
 echo -e "                                                        "
-echo -e "                                                        "
-echo -e "\e[94m##################################################"
-echo -e "\e[94m#   Commands           Description               #"
-echo -e "\e[94m#                                                #"
-echo -e "\e[94m#   menu       ----    Show Commands             #"
-echo -e "\e[94m#   add        ----    Create User Account       #"
-echo -e "\e[94m#   trial      ----    Create Trial Account      #"
-echo -e "\e[94m#   remove     ----    Remove Account            #"
-echo -e "\e[94m#   check      ----    Check Account Login       #"
-echo -e "\e[94m#   member     ----    Check Users               #"
-echo -e "\e[94m#   banner     ----    Configure Server Message  #"
-echo -e "\e[94m#   restart    ----    Restart Services          #"
-echo -e "\e[94m#   reboot     ----    Reboot VPS                #"
-echo -e "\e[94m#   speedtest  ----    Speedtest VPS             #"
-echo -e "\e[94m#   info       ----    System Information        #"
-echo -e "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"
-echo -e "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"
-echo -e "\e[94m#                                                #"
-echo -e "\e[94m##################################################"
-echo -e "\e[0m                                                "
-cd
-rm -f /root/debian7.sh
+read -n1 -r -p "\e[94m          Press Any Key To Show Commands          "
+menu
+
+
