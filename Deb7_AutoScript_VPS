@@ -81,7 +81,7 @@ echo 'echo -e "\e[94m#   about      ----    Deb7AutoScriptVPS Info    #"' >> .ba
 echo 'echo -e "\e[94m#   exit       ----    Close Putty / JuiceSSH    #"' >> .bashrc
 echo 'echo -e "\e[94m#                                                #"' >> .bashrc
 echo 'echo -e "\e[94m##################################################"' >> .bashrc
-echo 'echo -e "\e[0m"'  
+echo 'echo -e "\e[0m                                                   "' >> .bashrc
 
 # install webserver
 cd
