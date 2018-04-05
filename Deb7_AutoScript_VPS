@@ -87,7 +87,7 @@ echo 'echo -e "\e[0m"'
 cd
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
-wget -O /etc/nginx/nginx.conf "http://vira.cf/nginx.conf"
+wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/nginx.conf"
 mkdir -p /home/vps/public_html
 echo "<pre>Setup by Bustami Arifin</pre>" > /home/vps/public_html/index.html
 echo "<pre>Translation by _Dreyannz_</pre>" > /home/vps/public_html/index.html
@@ -127,7 +127,7 @@ screen -AmdS badvpn badvpn-udpgw --listen-addr 127.0.0.1:7300
 # setting port ssh
 cd
 sed -i 's/Port 22/Port 22/g' /etc/ssh/sshd_config
-sed -i '/Port 22/a Port 444' /etc/ssh/sshd_config
+sed -i '/Port 22/a Port 143' /etc/ssh/sshd_config
 service ssh restart
 
 # install dropbear
@@ -154,30 +154,12 @@ sed -i 's/ssl=1/ssl=0/g' /etc/webmin/miniserv.conf
 service webmin restart
 
 # install stunnel
-apt-get install stunnel4 -y
-cat > /etc/stunnel/stunnel.conf <<-END
-cert = /etc/stunnel/stunnel.pem
-client = no
-socket = a:SO_REUSEADDR=1
-socket = l:TCP_NODELAY=1
-socket = r:TCP_NODELAY=1
-
-
-[dropbear]
-accept = 143
-connect = 127.0.0.1:443
-
-END
-
-# create a certificate
-openssl genrsa -out key.pem 2048
-openssl req -new -x509 -key key.pem -out cert.pem -days 1095 \
--subj "/C=$country/ST=$state/L=$locality/O=$organization/OU=$organizationalunit/CN=$commonname/emailAddress=$email"
-cat key.pem cert.pem >> /etc/stunnel/stunnel.pem
-
-# stunnel configuration
+apt-get -y install stunnel4
+wget -O /etc/stunnel/stunnel.pem "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/stunnel.pem"
+wget -O /etc/stunnel/stunnel.conf "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/stunnel.conf"
+sed -i $MYIP2 /etc/stunnel/stunnel.conf
 sed -i 's/ENABLED=0/ENABLED=1/g' /etc/default/stunnel4
-/etc/init.d/stunnel4 restart
+service stunnel4 restart
 
 # install fail2ban
 apt-get -y install fail2ban;
