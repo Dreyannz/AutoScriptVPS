@@ -57,7 +57,7 @@ echo "clear"                                                              >> .ba
 echo 'echo -e "\e[94m   :::::::::  :::::::::: :::::::::  :::::::::::   "' >> .bashrc
 echo 'echo -e "\e[94m   :+:    :+: :+:        :+:    :+: :+:     :+:   "' >> .bashrc
 echo 'echo -e "\e[94m   +:+    +:+ +:+        +:+    +:+        +:+    "' >> .bashrc
-echo 'echo -e "\e[94m   #+    +:+ +#++:++#   +#++:++#+        +#+      "' >> .bashrc
+echo 'echo -e "\e[94m   #+     +:+ +#++:++#   +#++:++#+        +#+      "' >> .bashrc
 echo 'echo -e "\e[94m   +#+    +#+ +#+        +#+    +#+      +#+      "' >> .bashrc
 echo 'echo -e "\e[94m   #+#    #+# #+#        #+#    #+#     #+#       "' >> .bashrc
 echo 'echo -e "\e[94m   #########  ########## #########      ###       "' >> .bashrc
