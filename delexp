@@ -34,7 +34,7 @@ echo deleting $user ...
 userdel -r $user
 
 # if you want to disable the 'ask' feature you can add "#" in 3 lines
-else
-exit
-fi
+#else
+#exit
+#fi
 done
