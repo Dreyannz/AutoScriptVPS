@@ -72,6 +72,7 @@ echo 'echo -e "\e[94m#   trial      ----    Create Trial Account      #"' >> .ba
 echo 'echo -e "\e[94m#   remove     ----    Remove Account            #"' >> .bashrc
 echo 'echo -e "\e[94m#   check      ----    Check Account Login       #"' >> .bashrc
 echo 'echo -e "\e[94m#   member     ----    Check Users               #"' >> .bashrc
+echo 'echo -e "\e[94m#   delexp     ----    Delete Expired Users      #"' >> .bashrc
 echo 'echo -e "\e[94m#   banner     ----    Configure Server Message  #"' >> .bashrc
 echo 'echo -e "\e[94m#   restart    ----    Restart Services          #"' >> .bashrc
 echo 'echo -e "\e[94m#   reboot     ----    Reboot VPS                #"' >> .bashrc
@@ -208,6 +209,7 @@ wget -O trial "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/mast
 wget -O remove "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/hapus.sh"
 wget -O check "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
+wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/delexp.sh"
 wget -O banner "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/servermessage.sh"
 wget -O restart "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/speedtest_cli.py"
