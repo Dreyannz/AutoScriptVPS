@@ -187,7 +187,8 @@ cd
 apt-get -y --force-yes -f install libxml-parser-perl
 
 #block torrent
-iptables -A OUTPUT -p tcp --dport 6881:6889 -j DROP
+iptables -A OUT
+PUT -p tcp --dport 6881:6889 -j DROP
 iptables -A OUTPUT -p udp --dport 1024:65534 -j DROP
 iptables -A FORWARD -m string --string "get_peers" --algo bm -j DROP
 iptables -A FORWARD -m string --string "announce_peer" --algo bm -j DROP
@@ -209,7 +210,7 @@ wget -O trial "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/mast
 wget -O remove "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/hapus.sh"
 wget -O check "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/user-list.sh"
-wget -O member "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/delexp.sh"
+wget -O delexp "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/delexp.sh"
 wget -O banner "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/servermessage.sh"
 wget -O restart "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/resvis.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/speedtest_cli.py"
@@ -225,6 +226,7 @@ chmod +x trial
 chmod +x remove
 chmod +x check
 chmod +x member
+chmod +x delexp
 chmod +x banner
 chmod +x restart
 chmod +x speedtest
