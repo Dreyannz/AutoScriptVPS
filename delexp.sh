@@ -34,7 +34,7 @@ echo -e "\e[94m   +#+    +#+ +#+        +#+    +#+      +#+      "
 echo -e "\e[94m   #+#    #+# #+#        #+#    #+#     #+#       "
 echo -e "\e[94m   #########  ########## #########      ###       "
 echo -e "\e[94m         Deb7AutoScriptVPS by _Dreyannz_          "
-echo -e "\e[0m"'
+echo -e "\e[0m"
 echo -e "\e[94m       All Expired Users Has Been Deleted         "
-echo -e "\e[0m"'
+echo -e "\e[0m"
 
