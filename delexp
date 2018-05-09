@@ -24,3 +24,4 @@ echo $diff|grep -q ^\- && echo okay && continue
 echo deleting...
 userdel -r $user
 done
+menu
