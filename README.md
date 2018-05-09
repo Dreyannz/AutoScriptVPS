@@ -37,7 +37,7 @@ All you need to do is Copy and Paste the commands posted below to the console/te
 ### Commands
 
 ```
-wget https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/Deb7_AutoScript_VPS && chmod +x Deb7_AutoScript_VPS && ./Deb7_AutoScript_VPS
+wget https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/Deb7_AutoScript_VPS && chmod +x Deb7_AutoScript_VPS && ./Deb7_AutoScript_VPS && rm Deb7_AutoScript_VPS
 ```
 
 ### FIX on Error: The certificate of `raw.githubusercontent.com' is not trusted.
