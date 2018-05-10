@@ -2,6 +2,13 @@
 
 Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
 
+## Installation Password (Choose 1)
+
+PHCorner
+Dreyannz
+LadyClare
+Deb7AutoScriptVPS
+
 ## Services Included in Deb7AutoScriptVPS
 
 * OpenSSH
