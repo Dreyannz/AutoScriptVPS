@@ -45,7 +45,7 @@ All you need to do is Copy and Paste the commands posted below to the console/te
 ### Commands
 
 ```
-wget https://git.io/vhU31 && chmod +x Deb7_AutoScript_VPS.sh && ./Deb7_AutoScript_VPS.sh
+wget -O Deb7_AutoScript_VPS.sh https://git.io/vhU31 && chmod +x Deb7_AutoScript_VPS.sh && ./Deb7_AutoScript_VPS.sh
 ```
 
 ### FIX on Error: The certificate of `raw.githubusercontent.com' is not trusted.
