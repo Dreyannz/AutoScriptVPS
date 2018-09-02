@@ -2,7 +2,7 @@
 
 AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
 
-## Services Included in Deb7AutoScriptVPS
+## Services Included in AutoScriptVPS
 
 * OpenSSH
 * Dropbear
@@ -25,13 +25,10 @@ AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user invol
 
 All you need to do is Copy and Paste the commands posted below to the console/terminal of your VPS
 
-### Commands
+### Installation Command
 
 ```
 wget -O Deb7_AutoScript_VPS.sh https://git.io/vhU31 && chmod +x Deb7_AutoScript_VPS.sh && ./Deb7_AutoScript_VPS.sh
 ```
 
-### FIX on Error: The certificate of `raw.githubusercontent.com' is not trusted.
-```
-sudo apt-get install ca-certificates
-```
+
