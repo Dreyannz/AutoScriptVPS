@@ -29,7 +29,7 @@ All you need to do is Copy and Paste the commands posted below to the console/te
 ### Installation Command
 
 ```
-wget -O Deb7_AutoScript_VPS.sh https://git.io/vhU31 && chmod +x Deb7_AutoScript_VPS.sh && ./Deb7_AutoScript_VPS.sh
+wget -O AutoScriptVPS.sh https://git.io/fAl6P && chmod +x AutoScriptVPS.sh && ./AutoScriptVPS.sh
 ```
 
 
