@@ -1,13 +1,6 @@
-# Deb7AutoScriptVPS
+# AutoScriptVPS
 
-Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
-
-## Installation Passwords
-
-* PHCorner
-* Dreyannz
-* LadyClare
-* Deb7AutoScriptVPS
+AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
 
 ## Services Included in Deb7AutoScriptVPS
 
@@ -22,21 +15,11 @@ Deb7AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user i
 * Fail2Ban
 * DDOS Deflate
 
-## Script Commands in Deb7AutoScriptVPS
+## Script Commands in AutoScriptVPS
 
-* menu   
-* add 
-* trial
-* remove    
-* check  
-* member 
-* delexp
-* banner   
-* restart  
-* reboot  
-* speedtest
-* info   
-* about  
+* `accounts`  shows accounts menu
+* `options` shows options menu
+* `server` shows server menu
 
 ### How to Use the Deb7AutoScriptVPS
 
