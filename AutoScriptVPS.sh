@@ -341,9 +341,9 @@ echo -e "\e[94m                    Services                      "
 echo -e "\e[94m                                                  "
 echo -e "\e[94m    OpenSSH        :   "$opensshport
 echo -e "\e[94m    Dropbear       :   "$dropbearport
-echo -e "\e[94m    SSL            :   "$stunnel4port
+echo -e "\e[94m    Stunnel4       :   "$stunnel4port
 echo -e "\e[94m    OpenVPN        :   "$openvpnport
-echo -e "\e[94m    Port Squid     :   "$squidport
+echo -e "\e[94m    Squid3         :   "$squidport
 echo -e "\e[94m    Nginx          :   "$nginxport
 echo -e "\e[94m                                                  "
 echo -e "\e[94m              Other Features Included             "
