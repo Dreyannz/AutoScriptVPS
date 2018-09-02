@@ -1,2 +1,0 @@
-#!/bin/sh
-iptables-restore < /etc/iptables_yg_baru_dibikin.conf
