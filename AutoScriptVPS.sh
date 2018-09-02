@@ -7,8 +7,8 @@ export DEBIAN_FRONTEND=noninteractive
 OS=`uname -m`;
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 MYIP2="s/xxxxxxxxx/$MYIP/g";
-SOURCE_RAW="https://raw.githubusercontent.com/Dreyannz/Deb7AutoScriptVPS/master/Files";
-SOURCE_FILE="https://github.com/Dreyannz/Deb7AutoScriptVPS/raw/master/Files"
+SOURCE_RAW="https://raw.githubusercontent.com/Dreyannz/AutoScriptVPS/master/Files";
+SOURCE_FILE="https://github.com/Dreyannz/AutoScriptVPS/raw/master/Files"
 
 # Root Directory
 cd
@@ -319,7 +319,7 @@ service dropbear restart
 service squid3 restart
 service webmin restart
 rm -rf ~/.bash_history && history -c
-rm -f /root/AutoScript_VPS.sh
+rm -f /root/AutoScriptVPS.sh
 echo "unset HISTFILE" >> /etc/profile
 
 # grep ports 
