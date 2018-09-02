@@ -17,6 +17,7 @@ AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user invol
 
 ## Script Commands in AutoScriptVPS
 
+* `menu`  shows overall menu
 * `accounts`  shows accounts menu
 * `options` shows options menu
 * `server` shows server menu
