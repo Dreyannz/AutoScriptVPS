@@ -1,0 +1,177 @@
+#!/bin/bash
+# Created by http://www.vps-murah.net
+# Modified by 0123456
+
+if [[ -e /etc/debian_version ]]; then
+	OS=Debian
+elif [[ -e /etc/centos-release || -e /etc/redhat-release ]]; then
+	OS=Centos
+else
+	echo "This script only works on Debian and CentOS system"
+	exit
+fi
+if $(uname -m | grep '64'); then
+  arch='64 bit'
+else
+  arch='32 bit'
+fi
+echo "SOLUTIONS" > /var/tmp/solutions.txt
+
+# tun/tap
+# if [[ ! -e /dev/net/tun ]]; then
+	# echo "TUN/TAP: Not Running" > /var/tmp/hasil-tuntap.txt
+	# echo "- Enable Tun/TAP on the VPS Panel. If it is enabled, press disable wait 5 minutes and press enable again" >> /var/tmp/solutions.txt
+	# else
+	# echo "TUN/TAP: Normal" > /var/tmp/hasil-tuntap.txt
+# fi
+
+# ppp
+# if [[ ! -e /dev/ppp ]]; then
+	# echo "PPP: Not Running" > /var/tmp/hasil-ppp.txt
+	# echo "- Enable PPP on the VPS Panel. If it is enabled, press disable wait 5 minutes and press enable again" >> /var/tmp/solutions.txt
+	# else
+	# echo "PPP: Normal" > /var/tmp/hasil-ppp.txt
+# fi
+
+#OpenSSH
+netstat -ntlp | grep ssh | awk '{print $4}' | cut -d ":" -f 2 > /var/tmp/openssh.txt
+if [[ -s /var/tmp/openssh.txt ]] ; then
+cat /var/tmp/openssh.txt  | xargs | sed -e 's/ /,/g' > /var/tmp/openssh2.txt
+portopenssh=`cat /var/tmp/openssh2.txt`
+echo "OpenSSH: Normal. Running at Port $portopenssh" > /var/tmp/hasil-openssh.txt
+else
+echo "OpenSSH: Not Normal. (Not Running)" > /var/tmp/hasil-openssh.txt
+if [[ -e /etc/debian_version ]]; then
+		echo "- Type service ssh restart on putty/juicessh" >> /var/tmp/solutions.txt
+else [[ -e /etc/centos-release || -e /etc/redhat-release ]];
+		echo "- Type service sshd restart on putty/juicessh" >> /var/tmp/solutions.txt
+fi
+fi
+
+#Dropbear
+netstat -ntlp | grep dropbear | awk '{print $4}' | cut -d ":" -f 2 > /var/tmp/dropbear.txt
+if [[ -s /var/tmp/dropbear.txt ]] ; then
+cat /var/tmp/dropbear.txt | xargs | sed -e 's/ /,/g' > /var/tmp/dropbear2.txt
+portdropbear=`cat /var/tmp/dropbear2.txt`
+echo "Dropbear: Normal. Running at Port $portdropbear" > /var/tmp/hasil-dropbear.txt
+else
+echo "Dropbear: Not Normal. (Not Running)" > /var/tmp/hasil-dropbear.txt
+echo "- Type service dropbear restart on putty/juicessh" >> /var/tmp/solutions.txt
+fi
+
+#Squid Proxy
+netstat -ntlp | grep squid | awk '{print $4}' | cut -d ":" -f 4 > /var/tmp/squid.txt
+if [[ -s /var/tmp/squid.txt ]] ; then
+cat /var/tmp/squid.txt | xargs | sed -e 's/ /,/g' > /var/tmp/squid2.txt
+portsquid=`cat /var/tmp/squid2.txt`
+echo "Squid: Normal. Running at Port $portsquid" > /var/tmp/hasil-squid.txt
+else
+echo "Squid: Not Normal. (Not Running)" > /var/tmp/hasil-squid.txt
+if [[ -e /etc/debian_version ]]; then
+		echo "- Type service squid3 restart on putty/juicessh" >> /var/tmp/solutions.txt
+else [[ -e /etc/centos-release || -e /etc/redhat-release ]];
+		echo "- Type service squid restart on putty/juicessh" >> /var/tmp/solutions.txt
+fi
+fi
+
+#OpenVPN
+netstat -ntlp | grep openvpn | awk '{print $4}' | cut -d ":" -f 2 > /var/tmp/openvpn.txt
+if [[ -s /var/tmp/openvpn.txt ]] ; then
+cat /var/tmp/openvpn.txt | xargs | sed -e 's/ /,/g' > /var/tmp/openvpn2.txt
+portopenvpn=`cat /var/tmp/openvpn2.txt`
+echo "OpenVPN: Normal. Running at Port $portopenvpn" > /var/tmp/hasil-openvpn.txt
+else
+echo "OpenVPN: Not Normal. (Not Running)" > /var/tmp/hasil-openvpn.txt
+echo "- Type service openvpn restart on putty/juicessh" >> /var/tmp/solutions.txt
+echo "(If says no such device when openvpn is restarted, please disable Tun / Tap then enable again." >> /var/tmp/solutions.txt
+fi
+
+#Webmin
+netstat -ntlp | grep 10000 | awk '{print $4}' | cut -d ":" -f 2 > /var/tmp/webmin.txt
+if [[ -s /var/tmp/webmin.txt ]] ; then
+cat /var/tmp/webmin.txt | xargs | sed -e 's/ /,/g' > /var/tmp/webmin2.txt
+portwebmin=`cat /var/tmp/webmin2.txt`
+echo "Webmin: Normal. Running at Port $portwebmin" > /var/tmp/hasil-webmin.txt
+else
+echo "Webmin: Not Normal. (Not Running)" > /var/tmp/hasil-webmin.txt
+echo "- Type service webmin restart on putty/juicessh" >> /var/tmp/solutions.txt
+fi
+
+#nginx 
+netstat -ntlp | grep nginx | awk '{print $4}' | cut -d ":" -f 2 > /var/tmp/nginx.txt
+if [[ -s /var/tmp/nginx.txt ]] ; then
+cat /var/tmp/nginx.txt | xargs | sed -e 's/ /,/g' > /var/tmp/nginx2.txt
+portnginx=`cat /var/tmp/nginx2.txt`
+echo "nginx: Normal. Running at Port $portnginx" > /var/tmp/hasil-nginx.txt
+else
+echo "nginx: Not Normal. (Not Running)" > /var/tmp/hasil-nginx.txt
+echo "- Type service nginx restart on putty/juicessh" >> /var/tmp/solutions.txt
+fi
+
+echo " "
+echo " "
+echo " "
+echo "-------------------------------------------"
+echo "Automatic VPS Diagnostics"
+echo "-------------------------------------------"
+echo "CHECKING INTERFACE"
+echo " "
+echo "Operating System : $OS"
+echo "Architechture    : $arch"
+echo "-------------------------------------------"
+echo "CHECKING APPLICATIONS"
+echo " "
+cat /var/tmp/hasil-openssh.txt
+cat /var/tmp/hasil-dropbear.txt
+cat /var/tmp/hasil-squid.txt
+cat /var/tmp/hasil-openvpn.txt
+cat /var/tmp/hasil-webmin.txt
+cat /var/tmp/hasil-nginx.txt
+echo "-------------------------------------------"
+cat /var/tmp/solutions.txt
+echo "-------------------------------------------"
+echo "Do you want to run auto-fix?"
+echo "1) YES"
+echo "2) NO"
+read -p "Select options (1-2): " x
+if test $x -eq 1; then
+if [[ -e /etc/debian_version ]]; then
+service nginx start
+service php5-fpm start
+service vnstat restart
+service openvpn restart
+service snmpd restart
+service ssh restart
+service dropbear restart
+service fail2ban restart
+service squid3 restart
+service webmin restart
+service pptpd restart
+clear
+else [[ -e /etc/centos-release || -e /etc/redhat-release ]];
+service nginx start
+service php-fpm start
+service vnstat restart
+service openvpn restart
+service snmpd restart
+service sshd restart
+service dropbear restart
+service fail2ban restart
+service squid restart
+service webmin restart
+service pptpd restart
+service crond start
+clear
+fi
+echo " "
+echo "-------------------------------------------"
+echo " Auto Fix Process Completed                "
+echo "-------------------------------------------"
+echo " "
+# runs this if option 2 is selected
+elif test $x -eq 2; then
+exit
+else
+echo "Options are not available in the menu."
+exit
+fi
