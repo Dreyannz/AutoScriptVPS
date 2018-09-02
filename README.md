@@ -22,7 +22,7 @@ AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user invol
 * `options` shows options menu
 * `server` shows server menu
 
-### How to Use the Deb7AutoScriptVPS
+### How to Use the AutoScriptVPS
 
 All you need to do is Copy and Paste the commands posted below to the console/terminal of your VPS
 
