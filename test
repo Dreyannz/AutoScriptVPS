@@ -26,11 +26,6 @@ ln -fs /usr/share/zoneinfo/Asia/Manila /etc/localtime
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
 service ssh restart
 
-# Repo Sources
-wget -O /etc/apt/sources.list "https://raw.githubusercontent.com/Dreyannz/AutoScriptVPS/master/Files/Source/source.list.debian8";
-wget "http://www.dotdeb.org/dotdeb.gpg"
-cat dotdeb.gpg | apt-key add -;rm dotdeb.gpg
-
 # Update
 apt-get update
 
