@@ -28,3 +28,16 @@
 wget -O AutoScriptVPS https://git.io/fA44X && chmod +x AutoScriptVPS && ./AutoScriptVPS
 </p>
 
+<h3 align="center">Screenshots</h3>
+<p align="center">
+<img src="https://github.com/Dreyannz/AutoScriptVPS/raw/master/Files/Screenshots/1.JPG">
+   </p>
+  <p align="center">
+  <img src="https://github.com/Dreyannz/AutoScriptVPS/raw/master/Files/Screenshots/2.JPG">
+   </p>
+  <p align="center">
+  <img src="https://github.com/Dreyannz/AutoScriptVPS/raw/master/Files/Screenshots/3.JPG">
+  </p>
+  <p align="center">
+  <img src="https://github.com/Dreyannz/AutoScriptVPS/raw/master/Files/Screenshots/4.JPG">
+   </p>
