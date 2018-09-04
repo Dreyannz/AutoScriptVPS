@@ -29,7 +29,7 @@ All you need to do is Copy and Paste the commands posted below to the console/te
 ### Installation Command
 
 ```
-wget -O AutoScriptVPS.sh https://git.io/fAl6P && chmod +x AutoScriptVPS.sh && ./AutoScriptVPS.sh
+wget -O AutoScriptVPS https://git.io/fA44X && chmod +x AutoScriptVPS && ./AutoScriptVPS
 ```
 
 
