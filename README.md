@@ -1,6 +1,6 @@
-# AutoScriptVPS
+<h1 align="center">AutoScriptVPS</h1>
 
-AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS
+<p align="center">AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS</p>
 
 ## Services Included in AutoScriptVPS
 
