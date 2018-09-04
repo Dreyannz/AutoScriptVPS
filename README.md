@@ -4,16 +4,16 @@
 
 <h3 align="center">Services Includes</h3>
 <li align="center">OpenSSH</li>
+<li align="center">Dropbear</li>
+<li align="center">Stunnel4</li>
+<li align="center">OpenVPN</li>
+<li align="center">Squid3</li>
+<li align="center">BadVPN</li>
+<li align="center">Nginx</li>
+<li align="center">Webmin</li>
+<li align="center">Fail2Ban</li>
+<li align="center">DDOS Deflate</li>
 
-* Dropbear
-* SSL
-* Squid3
-* OpenVPN
-* BadVPN
-* WebMin
-* Nginx
-* Fail2Ban
-* DDOS Deflate
 
 ## Script Commands in AutoScriptVPS
 
