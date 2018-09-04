@@ -3,8 +3,8 @@
 <p align="center">AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS</p>
 
 <h3 align="center">Services Includes</h3>
+<li align="center">OpenSSH</li>
 
-* OpenSSH
 * Dropbear
 * SSL
 * Squid3
