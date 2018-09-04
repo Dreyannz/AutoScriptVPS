@@ -18,15 +18,10 @@
   <a><img src="https://img.shields.io/badge/Commands-server-yellow.svg"></a>
  </p>
 
+<h3 align="center">Installation</h3>
 
-### How to Use the AutoScriptVPS
-
-All you need to do is Copy and Paste the commands posted below to the console/terminal of your VPS
-
-### Installation Command
-
-```
-wget -O AutoScriptVPS https://git.io/fA44X && chmod +x AutoScriptVPS && ./AutoScriptVPS
-```
-
+<p align="center">
+`wget -O AutoScriptVPS https://git.io/fA44X && chmod +x AutoScriptVPS && ./AutoScriptVPS`
+`
+ </p>
 
