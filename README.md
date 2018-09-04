@@ -1,4 +1,4 @@
-<h1 align="center">AutoScriptVPS</h1>
+<h1 align="center">AutoScriptVPS<img src="https://img.shields.io/badge/Version-2.0-blue.svg"></h1>
 
 <p align="center">AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS</p>
 
