@@ -2,17 +2,14 @@
 
 <p align="center">AutoScriptVPS is made by _Dreyannz_ to minimize the time consumed and user involvement in setting up your VPS</p>
 
-<h3 align="center">Services Includes</h3>
-<li align="center">OpenSSH</li>
-<li align="center">Dropbear</li>
-<li align="center">Stunnel4</li>
-<li align="center">OpenVPN</li>
-<li align="center">Squid3</li>
-<li align="center">BadVPN</li>
-<li align="center">Nginx</li>
-<li align="center">Webmin</li>
-<li align="center">Fail2Ban</li>
-<li align="center">DDOS Deflate</li>
+<p align="center">
+  <a><img src="https://img.shields.io/badge/Service-OpenSSH-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Dropbear-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Stunnel-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-OpenVPN-green.svg"></a>
+    <a><img src="https://img.shields.io/badge/Service-Squid3-green.svg"></a>
+  <a><img src="https://img.shields.io/badge/Service-Dropbear-green.svg"></a>
+ </p>
 
 
 ## Script Commands in AutoScriptVPS
