@@ -27,7 +27,11 @@
 
 <p align="center">
 wget -O AutoScriptVPS https://git.io/fA44X
+  </p>
+  <p align="center">
   chmod +x AutoScriptVPS
+  </p>
+  <p align="center">
   ./AutoScriptVPS
 </p>
 
